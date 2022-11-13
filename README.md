@@ -24,7 +24,7 @@ Install dependencies
 npm i
 ```
 
-Build SASS
+Build SASS and Bootstrap
 
 ```
 npm run build
@@ -37,6 +37,28 @@ npm run dev
 ```
 
 ## Testing
+
+Implemented unit-tests:
+
+- login.test.js
+    - Tests successful login.
+    - Tests unsuccessful login.
+- logout.test.js
+    - Test localstorage removing token when loggin out.
+- create.test.js
+    - Testing successful post creation.
+
+Implemented cypress-tests:
+
+- create.testing.cy.js
+    - Testing creating new post the correct way.
+    - Testing without title.
+- logout.testing.cy.js
+    - Testing using logout-button to log out.
+- login.testing.cy.js
+    - Testing login with correct information.
+    - Testing bad email.
+    - Testing bad password.
 
 Both unit testing and E2E testing can be run in the terminal with one command:
 

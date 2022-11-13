@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:dist/css",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix",
     "start": "sass --watch src/scss:dist/css & live-server",
     "format": "prettier -w src/**/*.js"
   },
@@ -12,6 +14,7 @@
   "author": "Noroff",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.27.0",
     "live-server": "^1.2.2",
     "prettier": "^2.7.1",
     "sass": "^1.54.8"

@@ -12,7 +12,7 @@ describe("The create item form validates user inputs correctly based on API rest
     cy.visit("http://127.0.0.1:8485/?view=post");
     cy.wait(1000);
     cy.get("#postForm");
-    cy.get("input[name='title']").invoke("val", "Post number 1");
+    cy.get("input[id='postTitle']").invoke("val", "Post number 1");
     cy.get("input[name='tags']").invoke("val", "Post tag 1");
     cy.get("textarea[name=body]").invoke("val", "Post Number 1");
     cy.get("button[data-action='submit']")
